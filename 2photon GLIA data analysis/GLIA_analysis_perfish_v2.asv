@@ -1,17 +1,18 @@
-% ANALYSE GLIAL ACTIVITY FOR EACH INDIVIDUAL SAMPLE
+% VERSION 2 PART1 WITH THE DETECTED GLIA REGIONS
 
-% VERSION 19.09.2024
-% CREATOR Nathalie Jurisch-Yaksi
-% OTHER CODES NEEDED: plot_response_v4, computationF0_LL
 %% Set path to where your codes are ==========================
-addpath(genpath('X:\Nathalie\data\github\DGama_et_al_CR_2024'))
-%% STEP1: INDICATE LOCATION TO SAVE THE DATA=================================
+addpath(genpath('X:\Percival\Matlab codes\New 2p codes for analysis'))
+addpath(genpath('X:\Nathalie\other\manuscript\in preparation\DGama_brainphysiology_smh\2p_glia'))
+addpath(genpath('X:\Nathalie\data\github\DGama_et_al_CR_2024\2photon GLIA data analysis'))
+%% STEP1: IMPORT DATA=================================
+% load the result file data "Results_BrainRegions.mat" by dragging in the command window
+% you can also enter the path where the data is
 path='X:\Nathalie\other\manuscript\in preparation\DGama_brainphysiology_smh\2p_glia\data_newROI\'
+% cd(path)
 
 %% STEP2: CALCULATE DFF AND AVERAGE ACTIVITY FOR THE ROI FROM SAME BRAIN REGION===========================
 
-% THIS CODE WILL CALCULATE, PLOT AND SAVE THE DFF FOR ALL THE ROI AND BRAIN
-% REGIONS
+% THIS CODE WILL PLOT AND SAVE EVERYTHING
 % % ctrls (11)
 load('X:\Percival\2photon data\glia 2p\smh\Glia 2p ROIs redone\20221027_15_56_48_20221027GFAPgal4UASsmhctrlF02\Aligned\celldetection_manual\20221027GFAPgal4UASsmhctrlF02_Results_DV_nodoubles.mat')
 brainRegion=[3,3,2,2,3,3,2,2,1,1,2,2,3,3,3,3,1,1,2,2,3,3,2,2,1,1,1,1,2,2,2,2,1,1,2];
@@ -39,6 +40,9 @@ brainRegion=[3,3,2,2,2,2,2,2,3,3,2,2,2,3,3,1,1,2,2,2,1,1,2,2,1,1,2,2,2,2,1,1,2];
 [amplitude]=plot_response_v4 (results,path,brainRegion)
 load('X:\Percival\2photon data\glia 2p\smh\Glia 2p ROIs redone\20240719_16_46_29_20240719GFAPgal4UASsmhctrlF03\Aligned\celldetection_manual\20240719GFAPgal4UASsmhctrlF03_Results_DV_nodoubles.mat')
 brainRegion=[3,3,2,2,2,2,2,3,3,1,1,2,2,3,3,3,3,2,2,1,1,3,3,3,3,2,2,1,1,1,1,2,2,3,3,3,3,2,2,1,1,2];
+[amplitude]=plot_response_v4 (results,path,brainRegion)
+load('X:\Percival\2photon data\glia 2p\smh\Glia 2p ROIs redone\20240729_11_45_09_20240729GFAPgal4UASsmhctrlF01\Aligned\celldetection_manual\20240729GFAPgal4UASsmhctrlF01_Results_DV_nodoubles.mat')
+brainRegion=[2,2,2,2,1,1,3,3,2,2,2,2,3,3,1,1,2,2,3,3,2,2,1,1,3,3,2,2,1,1,3,3,1,1,2,2,2];
 [amplitude]=plot_response_v4 (results,path,brainRegion)
 load('X:\Percival\2photon data\glia 2p\smh\Glia 2p ROIs redone\20240729_13_16_13_20240729GFAPgal4UASsmhctrlF02\Aligned\celldetection_manual\20240729GFAPgal4UASsmhctrlF02_Results_DV_nodoubles.mat')
 brainRegion=[2,2,2,2,2,2,3,3,1,1,2,2,2,2,3,3,1,1,2,2,3,3,1,1,2,2,1,1,2,2,3,3,1,1,2,2,3,3,2];
