@@ -1,0 +1,5 @@
+Figure 2
+
+To plot panelA-C
+use the matlab code plotRNAseqData_smh.m
+which will load the RNAseqData.mat file

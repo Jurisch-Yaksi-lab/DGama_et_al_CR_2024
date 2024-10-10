@@ -12,7 +12,7 @@ path='X:\Nathalie\other\manuscript\in preparation\DGama_brainphysiology_smh\2p_g
 
 % THIS CODE WILL CALCULATE, PLOT AND SAVE THE DFF FOR ALL THE ROI AND BRAIN
 % REGIONS
-% % ctrls (11)
+% % ctrls (10)
 load('X:\Percival\2photon data\glia 2p\smh\Glia 2p ROIs redone\20221027_15_56_48_20221027GFAPgal4UASsmhctrlF02\Aligned\celldetection_manual\20221027GFAPgal4UASsmhctrlF02_Results_DV_nodoubles.mat')
 brainRegion=[3,3,2,2,3,3,2,2,1,1,2,2,3,3,3,3,1,1,2,2,3,3,2,2,1,1,1,1,2,2,2,2,1,1,2];
 [amplitude]=plot_response_v4 (results,path,brainRegion)
@@ -20,7 +20,7 @@ load('X:\Percival\2photon data\glia 2p\smh\Glia 2p ROIs redone\20221128_14_15_08
 brainRegion=[3,3,3,3,2,2,2,2,3,3,1,1,3,3,2,2,3,3,1,1,3,3,2,2,1,1,1,1,2,2,3,3,3,3,2,2,1,1,1,1,2,2,2];
 [amplitude]=plot_response_v4 (results,path,brainRegion)
 load('X:\Percival\2photon data\glia 2p\smh\2023_04_26\20230426_14_02_42_20230426GFAPgal4UASsmhctrlF04\Aligned\celldetection_manual\20230426GFAPgal4UASsmhctrlF04_Results_DV_nodoubles.mat')
-brainRegion=[3,2,3,2,2,2,3,2,1,1,3,2,1,1,1,1,3,2,1,1,1,1,2,1,1,1,1,1,2]; % needed to remove the 30th point which was a OT because of a double ROI,2];
+brainRegion=[3,2,3,2,2,2,3,2,1,1,3,2,1,1,1,1,3,2,1,1,1,1,2,1,1,1,1,1,2]; 
 [amplitude]=plot_response_v4 (results,path,brainRegion)
 load('X:\Percival\2photon data\glia 2p\smh\Glia 2p ROIs redone\20230718_21_39_56_20230718GFAPgal4UASsmctrlF05\Aligned\celldetection_manual\20230718GFAPgal4UASsmctrlF05_Results_DV_nodoubles.mat')
 brainRegion=[3,3,3,2,2,2,2,3,3,2,2,3,3,3,3,1,1,2,2,2,2,1,1,2,2,1,1,2,2,1,1,2];
