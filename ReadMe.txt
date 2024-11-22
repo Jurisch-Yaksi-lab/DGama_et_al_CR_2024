@@ -1,6 +1,6 @@
 This folder contains all MATLAB codes and summary of data, associated with the manuscript 
 
-"Cilia-mediated cerebrospinal fluid flow modulates neuronal and  astroglial activity in the zebrafish larval brain"
+"Motile cilia modulate neuronal and  astroglial activity in the zebrafish larval brain"
 by D'Gama et al, BioRXiv, https://doi.org/10.1101/2024.02.01.578354
 
 Abstract:
